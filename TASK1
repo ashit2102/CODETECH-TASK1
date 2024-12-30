@@ -1,0 +1,18 @@
+// THIS IS TASK NO.1) BLINKING ONE LED WITH ONE SEC DELAY
+
+#include<Arduino.h>
+#include<Wire.h>
+const int ledPin = 13; //Define led pin
+void setup() {
+  pinMode(ledPin, OUTPUT); //set the led pin as output
+}
+
+void loop() {
+(ledPin, HIGH);//Turn on led on digital write
+ delay(1000);//delay 1 sec
+  
+  
+ (ledPin, LOW);//Turn off led
+  
+  delay(1000);//delay 1 sec
+}
